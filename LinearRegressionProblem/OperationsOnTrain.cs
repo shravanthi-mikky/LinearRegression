@@ -278,7 +278,7 @@ namespace LinearRegressionProblem
                 AccuracyValue += item;
             }
 
-            double Square = (Math.Pow(AccuracyValue, 2))/N;
+            double Square =Math.Sqrt( (Math.Pow(AccuracyValue, 2))/N);
             Console.WriteLine("Root Mean Square : "+Square);
         }
     }
